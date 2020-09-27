@@ -1,0 +1,74 @@
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/New folder/git_it/.git/
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'dell@dell-PC.(none)')
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git config user.email "sahajseth1998@gmail.com"
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git config user.name "SahajSeth"
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git remote add origin https://github.com/sahaj993/temp.git
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sahaj993/temp.git'
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git add .
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git commit " added"
+error: pathspec ' added' did not match any file(s) known to git
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git commit -m " added"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sahaj993/temp.git'
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git add .
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git commit -m " added file"
+[master (root-commit) 8be93b4]  added file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document.txt
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 56.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sahaj993/temp.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+dell@dell-PC MINGW64 ~/Desktop/New folder/git_it (master)
+$ git add .
